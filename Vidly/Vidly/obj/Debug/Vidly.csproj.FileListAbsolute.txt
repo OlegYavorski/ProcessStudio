@@ -236,3 +236,9 @@ G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.
 G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.dll
 G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.pdb
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.Migrations.initial.resources
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
+G:\MVC201910\ProcessStudio\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
