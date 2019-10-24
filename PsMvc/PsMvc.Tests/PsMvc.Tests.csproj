@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B9315188-3E7D-48C9-A39D-4871400C9B88}</ProjectGuid>
+    <ProjectGuid>{8F101D95-9CC0-4198-BC31-331FD7C3E0AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PsMvc.Tests</RootNamespace>
@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PsMvc\PsMvc.csproj">
-      <Project>{916CAC67-E9F6-45BD-8823-62F663B256E2}</Project>
+      <Project>{E824D1BF-9226-4E9E-A8AA-A80DD67579B8}</Project>
       <Name>PsMvc</Name>
     </ProjectReference>
   </ItemGroup>
