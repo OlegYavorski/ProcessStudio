@@ -24,6 +24,7 @@ namespace PsMvc
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/My.css",
                       "~/Content/site.css"));
         }
     }
