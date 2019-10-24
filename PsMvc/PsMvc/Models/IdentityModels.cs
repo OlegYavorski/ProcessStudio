@@ -30,5 +30,7 @@ namespace PsMvc.Models
         }
 
         public System.Data.Entity.DbSet<PsMvc.Models.Ps> Ps { get; set; }
+
+        public System.Data.Entity.DbSet<PsMvc.Models.Periodicy> Periodicies { get; set; }
     }
 }

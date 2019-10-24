@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PeriodiciesController.cs" />
     <Compile Include="Controllers\PsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,6 +207,14 @@
     <Compile Include="Migrations\201910240658381_InitialCreate.cs" />
     <Compile Include="Migrations\201910240658381_InitialCreate.Designer.cs">
       <DependentUpon>201910240658381_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910241616142_Periodicy.cs" />
+    <Compile Include="Migrations\201910241616142_Periodicy.Designer.cs">
+      <DependentUpon>201910241616142_Periodicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910241617084_Fill_Periodicy.cs" />
+    <Compile Include="Migrations\201910241617084_Fill_Periodicy.Designer.cs">
+      <DependentUpon>201910241617084_Fill_Periodicy.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -320,6 +329,8 @@
     <Content Include="Views\Ps\Edit.cshtml" />
     <Content Include="Views\Ps\Index.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Periodicies\Details.cshtml" />
+    <Content Include="Views\Periodicies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,6 +349,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910240658381_InitialCreate.resx">
       <DependentUpon>201910240658381_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241616142_Periodicy.resx">
+      <DependentUpon>201910241616142_Periodicy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241617084_Fill_Periodicy.resx">
+      <DependentUpon>201910241617084_Fill_Periodicy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
