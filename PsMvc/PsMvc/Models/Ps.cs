@@ -11,12 +11,13 @@ namespace PsMvc.Models
         public int Id { get; set; }
 
         [Required]
+        [Display(Name="Имя процесса")]
         public string Name { get; set; }
 
-        [Display(Name="Имя процесса")]
+        [Display(Name = "Описание")]
         public string Description { get; set; }
 
-        [Display(Name = "Описание")]
+        [Display(Name = "Владелец")]
         public int? OwnerId { get; set; }
 
         [Display(Name = "Теги")]
@@ -46,7 +47,7 @@ namespace PsMvc.Models
         [Display(Name = "Препятствующие процессы")]
         public int[] ObstacleProcesses { get; set; }
 
-        [Display(Name = "Кому мешает данный процесс")]
+        [Display(Name = "Кому может помешать данный процесс")]
         public int[] ImAnObstacleFor { get; set; } // I'm an obstacle for ... Processes for which this one is an obstacle.
 
         [Display(Name = "Методы процесса")]
