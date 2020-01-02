@@ -2,18 +2,17 @@
 namespace PsMvc.Migrations
 {
     using System.CodeDom.Compiler;
-    using System.Data.Entity.Migrations;
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
-    
+
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Periodicy : IMigrationMetadata
+    public sealed partial class Initiate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Periodicy));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initiate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910241616142_Periodicy"; }
+            get { return "201912301221345_Initiate"; }
         }
         
         string IMigrationMetadata.Source

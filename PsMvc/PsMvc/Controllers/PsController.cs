@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using PsMvc.Models;
 using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Net;
-using System.Web;
+using System.Threading.Tasks;
 using System.Web.Mvc;
-using PsMvc.Models;
 
 namespace PsMvc.Controllers
 {
@@ -47,7 +42,7 @@ namespace PsMvc.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Description,OwnerId,Type,StatusId,Importance")] Ps ps)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Description,OwnerId,Type,StatusId,Importance,Cost,PeriodicityId")] Ps ps)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +74,7 @@ namespace PsMvc.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Description,OwnerId,Type,StatusId,Importance")] Ps ps)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Description,OwnerId,Type,StatusId,Importance,Cost,PeriodicityId")] Ps ps)
         {
             if (ModelState.IsValid)
             {

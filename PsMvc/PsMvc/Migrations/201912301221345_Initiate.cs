@@ -1,23 +1,17 @@
 namespace PsMvc.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
-    public partial class InitialCreate : DbMigration
+
+    public partial class Initiate : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Ps",
+                "dbo.Periodicies",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Description = c.String(),
-                        OwnerId = c.Int(nullable: false),
-                        Type = c.Int(nullable: false),
-                        StatusId = c.Int(nullable: false),
-                        Importance = c.Int(nullable: false),
+                        Name = c.String(nullable: false, maxLength: 20),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -108,7 +102,7 @@ namespace PsMvc.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
-            DropTable("dbo.Ps");
+            DropTable("dbo.Periodicies");
         }
     }
 }
