@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace PsMvc.Models
 {
+
     public class Ps // Process
     {
         public int Id { get; set; }
@@ -62,4 +59,5 @@ namespace PsMvc.Models
 
 
     }
+
 }
