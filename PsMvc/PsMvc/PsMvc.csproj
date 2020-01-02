@@ -78,6 +78,7 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
@@ -208,22 +209,17 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PeriodiciesController.cs" />
-    <Compile Include="Controllers\Ps1Controller.cs" />
     <Compile Include="Controllers\PsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910240658381_InitialCreate.cs" />
-    <Compile Include="Migrations\201910240658381_InitialCreate.Designer.cs">
-      <DependentUpon>201910240658381_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201912301221345_Initiate.cs" />
+    <Compile Include="Migrations\201912301221345_Initiate.Designer.cs">
+      <DependentUpon>201912301221345_Initiate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910241616142_Periodicy.cs" />
-    <Compile Include="Migrations\201910241616142_Periodicy.Designer.cs">
-      <DependentUpon>201910241616142_Periodicy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910241617084_Fill_Periodicy.cs" />
-    <Compile Include="Migrations\201910241617084_Fill_Periodicy.Designer.cs">
-      <DependentUpon>201910241617084_Fill_Periodicy.cs</DependentUpon>
+    <Compile Include="Migrations\201912301223193_AddPS.cs" />
+    <Compile Include="Migrations\201912301223193_AddPS.Designer.cs">
+      <DependentUpon>201912301223193_AddPS.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -248,6 +244,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\PsMvc2.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -259,7 +257,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -294,18 +294,13 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Periodicies\Details.cshtml" />
+    <Content Include="Views\Periodicies\Index.cshtml" />
     <Content Include="Views\Ps\Create.cshtml" />
     <Content Include="Views\Ps\Delete.cshtml" />
     <Content Include="Views\Ps\Details.cshtml" />
     <Content Include="Views\Ps\Edit.cshtml" />
     <Content Include="Views\Ps\Index.cshtml" />
-    <Content Include="Views\Periodicies\Details.cshtml" />
-    <Content Include="Views\Periodicies\Index.cshtml" />
-    <Content Include="Views\Ps1\Create.cshtml" />
-    <Content Include="Views\Ps1\Delete.cshtml" />
-    <Content Include="Views\Ps1\Details.cshtml" />
-    <Content Include="Views\Ps1\Edit.cshtml" />
-    <Content Include="Views\Ps1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -325,14 +320,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910240658381_InitialCreate.resx">
-      <DependentUpon>201910240658381_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912301221345_Initiate.resx">
+      <DependentUpon>201912301221345_Initiate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910241616142_Periodicy.resx">
-      <DependentUpon>201910241616142_Periodicy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910241617084_Fill_Periodicy.resx">
-      <DependentUpon>201910241617084_Fill_Periodicy.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912301223193_AddPS.resx">
+      <DependentUpon>201912301223193_AddPS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
